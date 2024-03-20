@@ -54,5 +54,12 @@ public class PropertyTest
         property.getPrice();
         property.getDescription();
     }
+
+    @Test
+    public void testToString()
+    {
+        System.out.println(property.toString());
+    }
 }
+
 

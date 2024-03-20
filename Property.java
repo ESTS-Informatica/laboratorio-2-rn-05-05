@@ -36,7 +36,12 @@ public class Property {
      * Description selector.
      */
     public String getDescription() {
-        return null;
+        if(description == null){
+            return null;
+        }
+        else{
+            return this.description;
+        }
     }
 
     /**
@@ -52,7 +57,12 @@ public class Property {
      * Price selector.
      */
     public double getPrice() {
-        return -1;
+        if(price != -1){
+            return this.price;
+        }
+        else{
+            return -1;
+        }
     }
     
     /**
@@ -66,6 +76,6 @@ public class Property {
 
     @Override
     public String toString() {
-        return null;
+        return ("Descricao : " + this.getDescription() + "\n" + "Preco : " + this.getPrice());
     }
 }
