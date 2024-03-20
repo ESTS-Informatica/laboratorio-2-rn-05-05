@@ -33,7 +33,12 @@ public class Company {
      * @return This company clients.
      */
     public List<User> getClients() {
-        return null;         // dummy implementation
+        if(clients != null){
+            return clients;
+        }
+        else{
+            return null;  
+        }
     }
 
     /**
@@ -42,7 +47,12 @@ public class Company {
      * @return This company sellers.
      */
     public List<User> getSellers() {
-        return null;         // dummy implementation
+        if(sellers != null){
+            return sellers;
+        }
+        else{
+            return null;  
+        }
     }
 
     /**

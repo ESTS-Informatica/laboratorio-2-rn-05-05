@@ -20,9 +20,6 @@ public class PropertyTest
      */
     public PropertyTest()
     {
-        String description = "T3 Monte Belo";
-        double price = 150000.0;
-        property = new Property(description, price);
     }
 
     /**
@@ -33,7 +30,9 @@ public class PropertyTest
     @BeforeEach
     public void setUp()
     {
-        
+        String description = "T3 Monte Belo";
+        double price = 150000.0;
+        property = new Property(description, price);
     }
 
     /**
